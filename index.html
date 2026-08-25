@@ -91,6 +91,31 @@
   .sl-dur { color: #8a7568; }
 
   .doc-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px dashed var(--pencil); font-family: 'Courier New', monospace; font-size: 11px; color: #6b5a50; line-height: 1.8; }
+
+  /* ---------- MOBILE RESPONSIVE ---------- */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 1rem 3rem; }
+    .nav-inner { padding: 0 1rem; }
+    .nav-brand { display: none; }
+    .doc-title { font-size: 30px; }
+    .doc-sub { font-size: 13px; }
+    .doc-meta { flex-wrap: wrap; }
+    .doc-meta span { margin-right: 1rem; margin-bottom: 4px; }
+    .video-title { font-size: 26px; }
+    .refs-thumb { width: calc(50% - 8px); margin-right: 8px; }
+    .refs-thumb img { height: 120px; }
+    .panel { width: 100%; margin-right: 0; }
+    .panel-frame { height: 240px; }
+    .sl-table { display: block; }
+    .sl-table thead { display: none; }
+    .sl-table tbody, .sl-table tr { display: block; width: 100%; }
+    .sl-table tr { margin-bottom: 12px; border: 1px solid rgba(52,38,31,0.12); border-radius: 3px; overflow: hidden; }
+    .sl-table td { display: block; width: 100%; white-space: normal; border-bottom: none; padding: 6px 12px; }
+    .sl-code { background: var(--burgundy); color: var(--white); padding: 6px 12px; font-size: 16px; }
+    .sl-title { padding-top: 10px; font-size: 14px; }
+    .sl-desc { padding-bottom: 4px; }
+    .sl-meta { padding-bottom: 12px; white-space: normal; }
+  }
 </style>
 </head>
 <body>
@@ -565,45 +590,45 @@
     <thead><tr><th>#</th><th>Shot</th><th>Description</th><th>Move / Duration</th></tr></thead>
     <tbody>
       <tr>
-          <td class="sl-code">1.1</td>
-          <td class="sl-title">Root-to-tip reveal</td>
-          <td class="sl-desc">Hand lifts the track vertically by the weft. Camera tilts down to reveal full length, opening beat for the whole video.</td>
-          <td class="sl-meta">Tilt down, held camera<br><span class="sl-dur">2–3s</span></td>
+          <td class="sl-code" data-label="#">1.1</td>
+          <td class="sl-title" data-label="Shot">Root-to-tip reveal</td>
+          <td class="sl-desc" data-label="Description">Hand lifts the track vertically by the weft. Camera tilts down to reveal full length, opening beat for the whole video.</td>
+          <td class="sl-meta" data-label="Move / Duration">Tilt down, held camera<br><span class="sl-dur">2–3s</span></td>
         </tr><tr>
-          <td class="sl-code">1.2</td>
-          <td class="sl-title">Track spotlight</td>
-          <td class="sl-desc">Macro on the hair, catching warm rim light to show colour depth. First of three quick product beats.</td>
-          <td class="sl-meta">Static macro<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">1.2</td>
+          <td class="sl-title" data-label="Shot">Track spotlight</td>
+          <td class="sl-desc" data-label="Description">Macro on the hair, catching warm rim light to show colour depth. First of three quick product beats.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static macro<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">1.3</td>
-          <td class="sl-title">Brush spotlight</td>
-          <td class="sl-desc">Brush rotates in frame, macro on the ball-tip bristles and airflow gaps between them.</td>
-          <td class="sl-meta">Slow rotate<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">1.3</td>
+          <td class="sl-title" data-label="Shot">Brush spotlight</td>
+          <td class="sl-desc" data-label="Description">Brush rotates in frame, macro on the ball-tip bristles and airflow gaps between them.</td>
+          <td class="sl-meta" data-label="Move / Duration">Slow rotate<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">1.4</td>
-          <td class="sl-title">Bonnet spotlight</td>
-          <td class="sl-desc">Scrunch-and-release to show the silk stretch and sheen. Closes the individual-feature trio.</td>
-          <td class="sl-meta">Handheld scrunch<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">1.4</td>
+          <td class="sl-title" data-label="Shot">Bonnet spotlight</td>
+          <td class="sl-desc" data-label="Description">Scrunch-and-release to show the silk stretch and sheen. Closes the individual-feature trio.</td>
+          <td class="sl-meta" data-label="Move / Duration">Handheld scrunch<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">1.5</td>
-          <td class="sl-title">Narrative: track + brush</td>
-          <td class="sl-desc">Track gets positioned, brush passes through and blends it, first beat of the mini “getting ready” story.</td>
-          <td class="sl-meta">Continuous motion<br><span class="sl-dur">3s</span></td>
+          <td class="sl-code" data-label="#">1.5</td>
+          <td class="sl-title" data-label="Shot">Narrative: track + brush</td>
+          <td class="sl-desc" data-label="Description">Track gets positioned, brush passes through and blends it, first beat of the mini “getting ready” story.</td>
+          <td class="sl-meta" data-label="Move / Duration">Continuous motion<br><span class="sl-dur">3s</span></td>
         </tr><tr>
-          <td class="sl-code">1.6</td>
-          <td class="sl-title">Narrative: bonnet wraps</td>
-          <td class="sl-desc">Bonnet wraps around to close the routine arc, completing the three-product story.</td>
-          <td class="sl-meta">Continuous motion<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">1.6</td>
+          <td class="sl-title" data-label="Shot">Narrative: bonnet wraps</td>
+          <td class="sl-desc" data-label="Description">Bonnet wraps around to close the routine arc, completing the three-product story.</td>
+          <td class="sl-meta" data-label="Move / Duration">Continuous motion<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">1.7</td>
-          <td class="sl-title">Suspended 3D orbit</td>
-          <td class="sl-desc">Hair suspended, brush running through it while the camera performs a slow orbit around the whole rig.</td>
-          <td class="sl-meta">Princess 360° orbit, robot-controlled path &middot; ⟲ Princess (motion control)<br><span class="sl-dur">4s</span></td>
+          <td class="sl-code" data-label="#">1.7</td>
+          <td class="sl-title" data-label="Shot">Suspended 3D orbit</td>
+          <td class="sl-desc" data-label="Description">Hair suspended, brush running through it while the camera performs a slow orbit around the whole rig.</td>
+          <td class="sl-meta" data-label="Move / Duration">Princess 360° orbit, robot-controlled path &middot; ⟲ Princess (motion control)<br><span class="sl-dur">4s</span></td>
         </tr><tr>
-          <td class="sl-code">1.8</td>
-          <td class="sl-title">Closing beat: tag macro</td>
-          <td class="sl-desc">Close on the burgundy tag/label, brand colour becomes the visual signature that carries into Videos 2 and 3.</td>
-          <td class="sl-meta">Macro push<br><span class="sl-dur">1–2s</span></td>
+          <td class="sl-code" data-label="#">1.8</td>
+          <td class="sl-title" data-label="Shot">Closing beat: tag macro</td>
+          <td class="sl-desc" data-label="Description">Close on the burgundy tag/label, brand colour becomes the visual signature that carries into Videos 2 and 3.</td>
+          <td class="sl-meta" data-label="Move / Duration">Macro push<br><span class="sl-dur">1–2s</span></td>
         </tr>
     </tbody>
   </table>
@@ -614,40 +639,40 @@
     <thead><tr><th>#</th><th>Shot</th><th>Description</th><th>Move / Duration</th></tr></thead>
     <tbody>
       <tr>
-          <td class="sl-code">2.1</td>
-          <td class="sl-title">Root-to-tip reveal</td>
-          <td class="sl-desc">Same signature opener as Video 1, but held longer here since this is the hero video for the hair itself.</td>
-          <td class="sl-meta">Tilt down, held longer<br><span class="sl-dur">3–4s</span></td>
+          <td class="sl-code" data-label="#">2.1</td>
+          <td class="sl-title" data-label="Shot">Root-to-tip reveal</td>
+          <td class="sl-desc" data-label="Description">Same signature opener as Video 1, but held longer here since this is the hero video for the hair itself.</td>
+          <td class="sl-meta" data-label="Move / Duration">Tilt down, held longer<br><span class="sl-dur">3–4s</span></td>
         </tr><tr>
-          <td class="sl-code">2.2</td>
-          <td class="sl-title">Macro strand + rim light</td>
-          <td class="sl-desc">Static hold on a single strand/section, warm rim light shows shine and colour. No motion needed, let it sit.</td>
-          <td class="sl-meta">Static macro, no motion<br><span class="sl-dur">2–3s</span></td>
+          <td class="sl-code" data-label="#">2.2</td>
+          <td class="sl-title" data-label="Shot">Macro strand + rim light</td>
+          <td class="sl-desc" data-label="Description">Static hold on a single strand/section, warm rim light shows shine and colour. No motion needed, let it sit.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static macro, no motion<br><span class="sl-dur">2–3s</span></td>
         </tr><tr>
-          <td class="sl-code">2.3</td>
-          <td class="sl-title">Comb-through, suspended</td>
-          <td class="sl-desc">Hair suspended so gravity does the movement work. Comb pulled slowly root to tip, doubles as a tangle-resistance proof.</td>
-          <td class="sl-meta">Slow vertical pull<br><span class="sl-dur">3s</span></td>
+          <td class="sl-code" data-label="#">2.3</td>
+          <td class="sl-title" data-label="Shot">Comb-through, suspended</td>
+          <td class="sl-desc" data-label="Description">Hair suspended so gravity does the movement work. Comb pulled slowly root to tip, doubles as a tangle-resistance proof.</td>
+          <td class="sl-meta" data-label="Move / Duration">Slow vertical pull<br><span class="sl-dur">3s</span></td>
         </tr><tr>
-          <td class="sl-code">2.4</td>
-          <td class="sl-title">Weft tug</td>
-          <td class="sl-desc">Quick, confident tug to prove the weft holds securely without loosening.</td>
-          <td class="sl-meta">Quick handheld<br><span class="sl-dur">1–2s</span></td>
+          <td class="sl-code" data-label="#">2.4</td>
+          <td class="sl-title" data-label="Shot">Weft tug</td>
+          <td class="sl-desc" data-label="Description">Quick, confident tug to prove the weft holds securely without loosening.</td>
+          <td class="sl-meta" data-label="Move / Duration">Quick handheld<br><span class="sl-dur">1–2s</span></td>
         </tr><tr>
-          <td class="sl-code">2.5</td>
-          <td class="sl-title">Cut-edge macro</td>
-          <td class="sl-desc">From the second pack Courtney is sending specifically for this. Clean line, no fraying.</td>
-          <td class="sl-meta">Static macro<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">2.5</td>
+          <td class="sl-title" data-label="Shot">Cut-edge macro</td>
+          <td class="sl-desc" data-label="Description">From the second pack Courtney is sending specifically for this. Clean line, no fraying.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static macro<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">2.6</td>
-          <td class="sl-title">Extreme macro push</td>
-          <td class="sl-desc">Probe lens travels into the hair rather than filming from outside, strand-level and immersive.</td>
-          <td class="sl-meta">DZO probe lens, slow controlled push &middot; ◎ DZO probe lens<br><span class="sl-dur">2–3s</span></td>
+          <td class="sl-code" data-label="#">2.6</td>
+          <td class="sl-title" data-label="Shot">Extreme macro push</td>
+          <td class="sl-desc" data-label="Description">Probe lens travels into the hair rather than filming from outside, strand-level and immersive.</td>
+          <td class="sl-meta" data-label="Move / Duration">DZO probe lens, slow controlled push &middot; ◎ DZO probe lens<br><span class="sl-dur">2–3s</span></td>
         </tr><tr>
-          <td class="sl-code">2.7</td>
-          <td class="sl-title">Twirl / swing, 1000fps</td>
-          <td class="sl-desc">Launcher-driven flick for a clean, repeatable motion. High frame rate catches strands separating and resettling.</td>
-          <td class="sl-meta">Launcher + Spark at 1000fps &middot; ⚡ Pixboom Spark (1000fps)<br><span class="sl-dur">2s (slow-mo)</span></td>
+          <td class="sl-code" data-label="#">2.7</td>
+          <td class="sl-title" data-label="Shot">Twirl / swing, 1000fps</td>
+          <td class="sl-desc" data-label="Description">Launcher-driven flick for a clean, repeatable motion. High frame rate catches strands separating and resettling.</td>
+          <td class="sl-meta" data-label="Move / Duration">Launcher + Spark at 1000fps &middot; ⚡ Pixboom Spark (1000fps)<br><span class="sl-dur">2s (slow-mo)</span></td>
         </tr>
     </tbody>
   </table>
@@ -658,45 +683,45 @@
     <thead><tr><th>#</th><th>Shot</th><th>Description</th><th>Move / Duration</th></tr></thead>
     <tbody>
       <tr>
-          <td class="sl-code">3.1</td>
-          <td class="sl-title">Suspended straight, hold</td>
-          <td class="sl-desc">Track suspended and straight, catching light. Opening beat for the styling story, deliberately calm before the transformation.</td>
-          <td class="sl-meta">Static hold<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">3.1</td>
+          <td class="sl-title" data-label="Shot">Suspended straight, hold</td>
+          <td class="sl-desc" data-label="Description">Track suspended and straight, catching light. Opening beat for the styling story, deliberately calm before the transformation.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static hold<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">3.2</td>
-          <td class="sl-title">Match-cut to styled</td>
-          <td class="sl-desc">Same rig, same camera position, quick match-cut so the straight-to-curled transformation reads instantly.</td>
-          <td class="sl-meta">Match-cut, locked position<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">3.2</td>
+          <td class="sl-title" data-label="Shot">Match-cut to styled</td>
+          <td class="sl-desc" data-label="Description">Same rig, same camera position, quick match-cut so the straight-to-curled transformation reads instantly.</td>
+          <td class="sl-meta" data-label="Move / Duration">Match-cut, locked position<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">3.3</td>
-          <td class="sl-title">Live styling beat</td>
-          <td class="sl-desc">Styling tool enters frame mid-shot, styling happens live rather than as a before/after, active proof of “can be styled.”</td>
-          <td class="sl-meta">Handheld tool entry<br><span class="sl-dur">3s</span></td>
+          <td class="sl-code" data-label="#">3.3</td>
+          <td class="sl-title" data-label="Shot">Live styling beat</td>
+          <td class="sl-desc" data-label="Description">Styling tool enters frame mid-shot, styling happens live rather than as a before/after, active proof of “can be styled.”</td>
+          <td class="sl-meta" data-label="Move / Duration">Handheld tool entry<br><span class="sl-dur">3s</span></td>
         </tr><tr>
-          <td class="sl-code">3.4</td>
-          <td class="sl-title">Princess 360, styled result on mannequin & wig</td>
-          <td class="sl-desc">Full circle orbit around the finished style on the mannequin, once it's set, no unfinished “back” to the shot. This is where the styling story and the complete-product moment meet.</td>
-          <td class="sl-meta">Princess 360° orbit, robot-controlled path &middot; ⟲ Princess (motion control)<br><span class="sl-dur">3–4s</span></td>
+          <td class="sl-code" data-label="#">3.4</td>
+          <td class="sl-title" data-label="Shot">Princess 360, styled result on mannequin & wig</td>
+          <td class="sl-desc" data-label="Description">Full circle orbit around the finished style on the mannequin, once it's set, no unfinished “back” to the shot. This is where the styling story and the complete-product moment meet.</td>
+          <td class="sl-meta" data-label="Move / Duration">Princess 360° orbit, robot-controlled path &middot; ⟲ Princess (motion control)<br><span class="sl-dur">3–4s</span></td>
         </tr><tr>
-          <td class="sl-code">3.5</td>
-          <td class="sl-title">Static hero profile</td>
-          <td class="sl-desc">Mannequin in profile, wig fully styled. Calm, confident hold before the movement beats, this is the “complete product” establishing shot.</td>
-          <td class="sl-meta">Static hold<br><span class="sl-dur">2–3s</span></td>
+          <td class="sl-code" data-label="#">3.5</td>
+          <td class="sl-title" data-label="Shot">Static hero profile</td>
+          <td class="sl-desc" data-label="Description">Mannequin in profile, wig fully styled. Calm, confident hold before the movement beats, this is the “complete product” establishing shot.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static hold<br><span class="sl-dur">2–3s</span></td>
         </tr><tr>
-          <td class="sl-code">3.6</td>
-          <td class="sl-title">Macro: part & hairline</td>
-          <td class="sl-desc">Close on the parting/hairline, if the brief still wants it, this is where “appears to grow from the scalp” gets proven visually.</td>
-          <td class="sl-meta">Static macro<br><span class="sl-dur">2s</span></td>
+          <td class="sl-code" data-label="#">3.6</td>
+          <td class="sl-title" data-label="Shot">Macro: part & hairline</td>
+          <td class="sl-desc" data-label="Description">Close on the parting/hairline, if the brief still wants it, this is where “appears to grow from the scalp” gets proven visually.</td>
+          <td class="sl-meta" data-label="Move / Duration">Static macro<br><span class="sl-dur">2s</span></td>
         </tr><tr>
-          <td class="sl-code">3.7</td>
-          <td class="sl-title">Slow-motion swing/twist</td>
-          <td class="sl-desc">The slow-motion spend for this video, a turn or swing on the full styled wig. Matches the board's motion clips directly.</td>
-          <td class="sl-meta">Launcher + Spark at 1000fps &middot; ⚡ Pixboom Spark (1000fps)<br><span class="sl-dur">2s (slow-mo)</span></td>
+          <td class="sl-code" data-label="#">3.7</td>
+          <td class="sl-title" data-label="Shot">Slow-motion swing/twist</td>
+          <td class="sl-desc" data-label="Description">The slow-motion spend for this video, a turn or swing on the full styled wig. Matches the board's motion clips directly.</td>
+          <td class="sl-meta" data-label="Move / Duration">Launcher + Spark at 1000fps &middot; ⚡ Pixboom Spark (1000fps)<br><span class="sl-dur">2s (slow-mo)</span></td>
         </tr><tr>
-          <td class="sl-code">3.8</td>
-          <td class="sl-title">Closing beat: tag macro</td>
-          <td class="sl-desc">Same tag/label closing device as Video 1, ties all three videos together as one campaign rather than separate shoots.</td>
-          <td class="sl-meta">Macro push<br><span class="sl-dur">1–2s</span></td>
+          <td class="sl-code" data-label="#">3.8</td>
+          <td class="sl-title" data-label="Shot">Closing beat: tag macro</td>
+          <td class="sl-desc" data-label="Description">Same tag/label closing device as Video 1, ties all three videos together as one campaign rather than separate shoots.</td>
+          <td class="sl-meta" data-label="Move / Duration">Macro push<br><span class="sl-dur">1–2s</span></td>
         </tr>
     </tbody>
   </table>
@@ -708,35 +733,35 @@
     <thead><tr><th>#</th><th>Shot</th><th>Description</th><th>Product</th></tr></thead>
     <tbody>
       <tr>
-      <td class="sl-code">S01</td>
-      <td class="sl-title">Brush hero still</td>
-      <td class="sl-desc">Clean standalone product shot, brush only, for website/PDP use.</td>
-      <td class="sl-meta">Brush<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S01</td>
+      <td class="sl-title" data-label="Shot">Brush hero still</td>
+      <td class="sl-desc" data-label="Description">Clean standalone product shot, brush only, for website/PDP use.</td>
+      <td class="sl-meta" data-label="Product">Brush<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr><tr>
-      <td class="sl-code">S02</td>
-      <td class="sl-title">Brush detail still</td>
-      <td class="sl-desc">Macro on the ball-tip bristles and airflow gaps, supports the double-bristle/airflow feature.</td>
-      <td class="sl-meta">Brush<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S02</td>
+      <td class="sl-title" data-label="Shot">Brush detail still</td>
+      <td class="sl-desc" data-label="Description">Macro on the ball-tip bristles and airflow gaps, supports the double-bristle/airflow feature.</td>
+      <td class="sl-meta" data-label="Product">Brush<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr><tr>
-      <td class="sl-code">S03</td>
-      <td class="sl-title">Bonnet hero still</td>
-      <td class="sl-desc">Clean standalone product shot, bonnet only, for website/PDP use. Colourway shown clearly.</td>
-      <td class="sl-meta">Bonnet<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S03</td>
+      <td class="sl-title" data-label="Shot">Bonnet hero still</td>
+      <td class="sl-desc" data-label="Description">Clean standalone product shot, bonnet only, for website/PDP use. Colourway shown clearly.</td>
+      <td class="sl-meta" data-label="Product">Bonnet<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr><tr>
-      <td class="sl-code">S04</td>
-      <td class="sl-title">Bonnet detail still</td>
-      <td class="sl-desc">Silk texture close-up showing the reversible fold and interior tag.</td>
-      <td class="sl-meta">Bonnet<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S04</td>
+      <td class="sl-title" data-label="Shot">Bonnet detail still</td>
+      <td class="sl-desc" data-label="Description">Silk texture close-up showing the reversible fold and interior tag.</td>
+      <td class="sl-meta" data-label="Product">Bonnet<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr><tr>
-      <td class="sl-code">S05</td>
-      <td class="sl-title">Hair Tracks hero still</td>
-      <td class="sl-desc">Clean standalone product shot, hair tracks only, for website/PDP use.</td>
-      <td class="sl-meta">Hair Tracks<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S05</td>
+      <td class="sl-title" data-label="Shot">Hair Tracks hero still</td>
+      <td class="sl-desc" data-label="Description">Clean standalone product shot, hair tracks only, for website/PDP use.</td>
+      <td class="sl-meta" data-label="Product">Hair Tracks<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr><tr>
-      <td class="sl-code">S06</td>
-      <td class="sl-title">Hair Tracks detail still</td>
-      <td class="sl-desc">Weft and cut-edge detail, supports the clean finish and secure weft claims.</td>
-      <td class="sl-meta">Hair Tracks<br><span class="sl-dur">Ecommerce-ready</span></td>
+      <td class="sl-code" data-label="#">S06</td>
+      <td class="sl-title" data-label="Shot">Hair Tracks detail still</td>
+      <td class="sl-desc" data-label="Description">Weft and cut-edge detail, supports the clean finish and secure weft claims.</td>
+      <td class="sl-meta" data-label="Product">Hair Tracks<br><span class="sl-dur">Ecommerce-ready</span></td>
     </tr>
     </tbody>
   </table>
